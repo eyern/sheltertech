@@ -1,0 +1,56 @@
+/* strat team */ 
+.team{
+    margin: 100px 0;
+    .head{
+        h1{
+            font-weight: 800;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 800;
+            @media (max-width:991px) {
+                width: 70%;
+            }
+        }
+        h5{
+            @include headDes();
+        }
+    }
+    .members{
+        >div {
+            transition: .4s;
+            padding-top: calc(var(--bs-gutter-x) * .5);
+            padding-bottom: calc(var(--bs-gutter-x) * .5);
+            &:hover{
+                background-color: $mainColor;
+            }
+            .person{
+                background-color: #fff !important;
+                padding-bottom: 20px;
+                .team-social{
+                    transform: translateY(-50%);
+                    a{
+                        background-color:#fff;
+                        color:$mainColor;
+                        border-radius: 0;
+                        padding: 5px 10px;
+                        box-shadow: none;
+                        outline: none;
+                        transition: .3s;
+                        &:hover{
+                            background-color:$mainColor;
+                            color:#fff;
+                        }
+                    }
+                }
+                .text{
+                    p{
+                        color: $mainColor;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+/* end team */ 

@@ -1,0 +1,250 @@
+/* start top-head */ 
+.head-top{
+    background-color: #252525 !important;
+    padding: 8px 0;
+    a{
+        color: #777;
+    }
+    .info{
+        i{
+            color: $mainColor !important;
+        }
+    }
+    .social-links{
+        .icons{
+            a{
+                border: 1.5px solid #777;
+                border-radius: 0 !important;
+                transition: .3s;
+                i{
+                    color: $mainColor;
+                    transition: .3s;
+                }
+                &:hover{
+                    background-color: $mainColor;
+                    border: 1.5px solid $mainColor;
+                    i{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+/* end top-head */ 
+
+/* start navbar */ 
+.navbar{
+    background-color: #fff;
+    .navbar-brand{
+        img{
+            width: 60px;
+            @media (max-width:720px) {
+                width: 45px;
+            }
+        }
+        h3{
+            font-size: 35px;
+            color: $mainColor;
+            font-weight: 800;
+            @media (max-width:720px) {
+                font-size: 30px;
+                font-weight: 600;
+            }
+        }
+
+    }
+    .navbar-toggler{
+        box-shadow: none !important;
+        border: 2px solid #fff;
+        border-radius: 0 !important;
+        &:focus{
+            border: 2px solid #777;
+        }
+    }
+    .navbar-collapse{
+        .navbar-nav{
+            >.nav-item{
+               >a{
+                   text-transform: uppercase;
+                   color: #000 !important;
+                   font-weight:500;
+                   &.active,&:hover{
+                       color: $mainColor !important;
+                   }
+               }
+            }
+            .dropdown-menu{
+                border: none !important;
+                li{
+                    a{
+                       &:focus,&.active{
+                           background-color: $mainColor;
+                           color: #fff;
+                       }  
+                    }
+                }
+            }
+        }
+        .button{
+            a{
+                background-color: $mainColor !important;
+                color: #fff;
+                padding: 10px 20px;
+            }
+        }
+    }
+}
+/* end navbar */ 
+
+/* startt header */ 
+.header{
+    .carousel{
+        .layout{
+            background-color: rgb(0, 0, 0);
+            z-index: 1;
+            width: 100%;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            overflow:hidden;
+            opacity: 0.6;
+        }
+        img{
+            width: 100%;
+            height:calc(100vh - 94px - 55px);
+            @media (max-width:991px) {
+                height:650px;
+            }
+            @media (max-width:720px) {
+                height:600px;
+            }
+            @media (max-width:676px) {
+                height:550px;
+            }
+        }
+        .carousel-indicators{
+            position: absolute;
+            right: 5% !important;
+            z-index:2;
+            top: 50%;
+            transform: translateY(-50%);
+            list-style: none;
+            display: block !important;
+            margin: 0 !important;
+            bottom: auto !important;
+            left: auto !important;
+            button{
+                display: block;
+                background-color: none;
+                background-size:cover;
+                background-position: center center;
+                width: 50px;
+                height: 50px;
+                border: 2px solid rgb(71, 70, 70);
+                margin-right: 0;
+                margin-left: 0;
+                transition: all .4s !important;
+                &.active{
+                    transform: scale(1.1);
+                }
+                &:nth-of-type(1){
+                    background-image: url("../imgs/carousel-1.jpg");
+                }
+                &:nth-of-type(2){
+                    background-image: url("../imgs/carousel-2.jpg");
+                    margin: 6px 0 !important;
+                }
+                &:nth-of-type(3){
+                    background-image: url("../imgs/carousel-3.jpg");
+                }
+            }
+        }
+        .carousel-caption{
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: start;
+            left: 8%;
+            bottom: auto;
+            z-index:2;
+            h1{
+                font-size: 80px;
+                color: #fff;
+                font-weight: 800;
+                margin: 0 !important;
+                @media (max-width:991px) {
+                    font-size: 55px;
+                }
+                @media (max-width:720px) {
+                    font-size: 43px;
+                }
+                @media (max-width:676px) {
+                    font-size: 33px;
+                }
+            }
+            p{
+                font-size: 18px;
+                width: 70%;
+                margin: 10px 0 25px!important;
+                @media (max-width:720px) {
+                    width: 90%;
+                    font-size: 17px;
+                }
+            }
+            a{
+              @include buttonDes;
+            }
+        }
+    }
+}
+/* end header */ 
+
+/* start header two */ 
+.header-two{
+    background-image: url("../imgs/carousel-1.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    .layout{
+            background-color: rgb(0, 0, 0);
+            z-index: 1;
+            width: 100%;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            overflow:hidden;
+            opacity: 0.6;
+    }
+    .content{
+        padding: 50px 0;
+        position: relative;
+        z-index: 2;
+        h1{
+            color: #fff;
+            font-size: 60px;
+            font-weight: 800;
+            @media (max-width:991px) {
+                font-size: 50px;
+            }
+            @media (max-width:720px) {
+                font-size: 45px;
+            }
+            @media (max-width:676px) {
+                font-size: 40px;
+            }
+        }
+        ul{
+            li{
+                a{
+                    color: #fff;
+                }
+                &:last-of-type{
+                    a{
+                        color: $mainColor;
+                    }
+                }
+            }
+        }
+    }
+}
+/* end header two */ 

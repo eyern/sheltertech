@@ -1,0 +1,35 @@
+/* start error */ 
+.error{
+    margin: 100px 0;
+    .content{
+        i{
+            color: $mainColor;
+            font-size: 50px;
+        }
+        h1{
+            font-weight: 900;
+            font-size: 50px;
+        }
+        h3{
+            font-weight: 700;
+        }
+        p{
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            @media (max-width:991px) {
+                width: 70%;
+            }
+            @media (max-width:720px) {
+                width: 80%;
+            }
+            @media (max-width:676px) {
+                width: 90%;
+            }
+        }
+        a{
+            @include buttonDes();
+        }
+    }
+}
+/* end error */ 

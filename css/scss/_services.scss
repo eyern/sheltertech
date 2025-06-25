@@ -1,0 +1,237 @@
+/* start services */ 
+.services{
+    margin: 100px 0;
+    .content{
+        .head{
+            h5{
+                @include headDes();
+            }
+            h1{
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+                font-weight: 800;
+                @media (max-width:991px) {
+                    width: 70%;
+                }
+            }
+        }
+        .servs{
+            >div:first-of-type{
+               >div:hover{
+                    background-image: url("../imgs/service-1.jpg");
+                    background-size: cover;
+                    background-position: center;
+                    .overlay{
+                        opacity: .6;
+                        visibility: visible;
+                        background-color: #000;
+                    }
+                    h3{
+                        color: #fff;
+                    }
+                    p{
+                        color: #fff;
+                    }
+                    a{
+                        width: 200px;
+                        span{
+                            visibility: visible;
+                            opacity: 1;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+            >div:nth-of-type(2){
+                >div:hover{
+                     background-image: url("../imgs/service-2.jpg");
+                     background-size: cover;
+                     background-position: center;
+                     .overlay{
+                         opacity: .6;
+                         visibility: visible;
+                         background-color: #000;
+                     }
+                     h3{
+                         color: #fff;
+                     }
+                     p{
+                         color: #fff;
+                     }
+                     a{
+                        width: 200px;
+                        span{
+                            visibility: visible;
+                            opacity: 1;
+                            color: #000;
+                        }
+                    }
+                 }
+             }
+             >div:nth-of-type(3){
+                >div:hover{
+                     background-image: url("../imgs/service-3.jpg");
+                     background-size: cover;
+                     background-position: center;
+                     .overlay{
+                         opacity: .6;
+                         visibility: visible;
+                         background-color: #000;
+                     }
+                     h3{
+                         color: #fff;
+                     }
+                     p{
+                         color: #fff;
+                     }
+                     a{
+                        width: 200px;
+                        span{
+                            visibility: visible;
+                            opacity: 1;
+                            color: #000;
+                        }
+                    }
+                 }
+             }
+             >div:nth-of-type(4){
+                >div:hover{
+                     background-image: url("../imgs/service-4.jpg");
+                     background-size: cover;
+                     background-position: center;
+                     .overlay{
+                         opacity: .6;
+                         visibility: visible;
+                         background-color: #000;
+                     }
+                     h3{
+                         color: #fff;
+                     }
+                     p{
+                         color: #fff;
+                     }
+                     a{
+                        width: 200px;
+                        span{
+                            visibility: visible;
+                            opacity: 1;
+                            color: #000;
+                        }
+                    }
+                 }
+             }
+             >div:nth-of-type(5){
+                >div:hover{
+                     background-image: url("../imgs/service-5.jpg");
+                     background-size: cover;
+                     background-position: center;
+                     .overlay{
+                         opacity: .6;
+                         visibility: visible;
+                         background-color: #000;
+                     }
+                     h3{
+                         color: #fff;
+                     }
+                     p{
+                         color: #fff;
+                     }
+                     a{
+                        width: 200px;
+                        span{
+                            visibility: visible;
+                            opacity: 1;
+                            color: #000;
+                        }
+                    }
+                 }
+             }
+             >div:last-of-type{
+                >div:hover{
+                     background-image: url("../imgs/service-6.jpg");
+                     background-size: cover;
+                     background-position: center;
+                     .overlay{
+                         opacity: .6;
+                         visibility: visible;
+                         background-color: #000;
+                     }
+                     h3{
+                         color: #fff;
+                     }
+                     p{
+                         color: #fff;
+                     }
+                     a{
+                        width: 200px;
+                        span{
+                            visibility: visible;
+                            opacity: 1;
+                            color: #000;
+                        }
+                    }
+                 }
+             }
+        }
+        .service{
+            transition : .3s;
+            .overlay{
+                width: 100%;
+                top: 0;
+                bottom: 0;
+                background-color:transparent;
+                z-index: 1;
+                left: 0;
+                opacity: 0;
+                visibility: hidden;
+                transition: .3s;
+            }        
+
+            img{
+                position: relative;
+                    z-index:2;
+                    transition: .3s;
+            }
+            h3{
+                position: relative;
+                    z-index:2;
+                    transition: .3s;
+            }
+            p{
+                position: relative;
+                    z-index:2;
+                    transition: .3s;
+            }
+
+            a{
+                background-color: rgb(255, 255, 255);
+                width: 50px;
+                transition: .4s;
+                margin: auto;
+                border-radius: 0 !important;
+                height: 33px;
+                line-height: 30px;
+                padding: 0 !important;
+                position: relative;
+                overflow:hidden;
+                z-index:2;
+                &:focus{
+                    box-shadow: none;
+                    outline: 2px solid rgba($color:$mainColor, $alpha: 0.5);
+                }
+                span{
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: .4s;
+                }
+                i{
+                    color: $mainColor;
+                    margin: 0 !important;
+                    margin-right: 10px !important;
+                }
+            }
+        }
+    }
+}
+/* end services */ 

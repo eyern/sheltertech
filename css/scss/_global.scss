@@ -1,0 +1,81 @@
+body{
+    color: #777;
+    overflow-x: hidden;
+    font-family: $mainFamily;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 400;
+    overflow-y: hidden;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: $headColor;
+    font-family: $headFamily;
+    line-height: 1.2;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* overlay and top scroll btn */ 
+.top-scroll{
+    position:fixed;
+    bottom:10px;
+    right: 10px;
+    width: 40px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    background-color: $mainColor;
+    color: #fff;
+    z-index: 65;
+    cursor: pointer;
+    transition: .4s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.overlay-cover{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 990;
+    height: 100vh;
+    .content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        .img{
+            width: 70px;
+            padding: 10px;
+            height: 70px;
+            border-radius: 50px;
+            text-align: center;
+            border: 2px solid transparent;
+            border-left: 2px solid $mainColor;
+            animation: rot 1s linear infinite;
+            @keyframes rot {
+                0%,100%{
+                    transform: rotate(0deg);
+                }
+
+                50%{
+                    transform: rotate(180deg);
+                }
+                70%{
+                    transform: rotate(270deg);
+                }
+                100%{
+                    transform: rotate(360deg);
+                }
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

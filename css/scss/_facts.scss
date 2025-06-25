@@ -1,0 +1,22 @@
+/* start facts */ 
+.facts{
+    margin: 100px 0;
+    .fact{
+        background-color:$mainColor;
+        &:hover{
+            img{
+                background-color: #000;
+            }
+        }
+        img{
+            padding: 20px;
+            background-color: #fff;
+            transition: .3s;
+            border-radius: 20px;
+        }
+        p{
+            color: rgb(226, 223, 223);
+        }
+    }
+}
+/* end facts */ 

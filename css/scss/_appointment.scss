@@ -1,0 +1,43 @@
+/* start appointment */ 
+.appointment{
+    margin: 100px 0;
+    .content{
+        .text{
+            h5{
+                @include headDes();
+            }
+            h1{
+                font-weight: 800;
+            }
+            .data{
+                i{
+                    padding: 20px;
+                    font-size: 30px;
+                    color: $mainColor;
+                }
+            }
+        }
+        form{
+            .form-control{
+                border-radius: 0 !important;
+                border: 1.5px solid #222;
+                padding: 10px !important;
+                &:focus{
+                    border:1.5px solid $mainColor;
+                    box-shadow: none;
+                }
+            }
+            select,input[type="date"],input[type="time"]{
+                color: rgb(128, 128, 128) !important;
+            }
+            button{
+                border: none;
+                background-color: $mainColor;
+                padding: 15px;
+                color: #fff;
+                font-weight: 500;
+            }
+        }
+    }
+}
+/* end appointment */ 

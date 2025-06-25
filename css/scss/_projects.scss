@@ -1,0 +1,95 @@
+/* start projects */ 
+.projects{
+    margin: 100px 0;
+    .content{
+        .head{
+            h5{
+                @include headDes();
+            }
+            h1{
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+                font-weight: 800;
+                @media (max-width:991px) {
+                    width: 70%;
+                }
+            }
+        }
+        .pros{
+            .names{
+                height: 100% !important;
+                div{
+                    &.active{
+                        background-color: $mainColor;
+                        h3{
+                            color: #fff !important;
+                        }
+                    }
+                     padding: 25px;
+                     cursor: pointer;
+                     transition: .4s;
+                     h3{
+                         margin: 0 !important;
+                         user-select: none;
+                     }
+                     &:not(:first-of-type){
+                         margin-top: 31px;
+                     }
+                }
+            }
+            .imgs{
+                height: 100% !important;
+                .img{
+                    visibility: hidden;
+                    opacity: 0;
+                    transition:opacity .4s;
+                    height: 100% !important;
+                    &.active{
+                        visibility: visible;
+                        opacity: 1;
+                        position: static !important;
+                    }
+                    img{
+                        width: 100% !important;
+                        height: 100% !important;
+                    }
+                }
+            }
+            .texts{
+                .text{
+                    visibility: hidden;
+                    opacity: 0;
+                    transition:opacity .4s;
+                    height: 100% !important;
+                    &.active{
+                        visibility: visible;
+                        opacity: 1;
+                        position:static !important;
+                    }
+                    h2{
+                        font-size:36px;
+                        font-weight: 700;
+                    }
+                    >div{
+                        div{
+                            display: flex;
+                            align-items: center;
+                            &:nth-of-type(2){
+                                margin: 15px 0;
+                            }
+                            i{
+                                color: $mainColor;
+                            }
+                        }
+                    }
+                    a{
+                        @include buttonDes();
+                        margin-top: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+/* end projects */ 

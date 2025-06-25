@@ -1,0 +1,52 @@
+/* start contact */ 
+.contact{
+    margin: 100px 0;
+    .content{
+        .head{
+            h5{
+                @include headDes();
+            }
+            h1{
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+                font-weight: 800;
+                @media (max-width:991px) {
+                    width: 70%;
+                }
+            }
+        }
+        .infos{
+            .info{
+                .icon{
+                    background-color: #000;
+                    i{
+                        color: $mainColor;
+                    }
+                }
+                h3{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        form{
+            .form-control,textarea{
+                border-radius: 0 !important;
+                border: 1.5px solid #222;
+                padding: 10px !important;
+                &:focus{
+                    border:1.5px solid $mainColor;
+                    box-shadow: none;
+                }
+            }
+            button{
+                border: none;
+                background-color: $mainColor;
+                padding: 15px;
+                color: #fff;
+                font-weight: 500;
+            }
+        }
+    }
+}
+/* end contact */ 

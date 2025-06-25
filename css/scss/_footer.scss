@@ -1,0 +1,102 @@
+/*start footer */ 
+.footer{
+    background-color: $headColor;
+    margin-top: 100px;
+    padding: 40px 0 20px;
+    .links{
+        h3{
+            color: #fff;
+        }
+        ul{
+            margin-top: 15px;
+            li{
+                &:not(:first-of-type){
+                    margin-top: 10px;
+                }
+                a{
+                    color: #777;
+                    transition: .3s;
+                    i{
+                        color: $mainColor;
+                    }
+                    &:hover{
+                        letter-spacing: 2px;
+                        color: $mainColor;
+                    }
+                }
+            }
+        }
+    }
+    .info{
+        h3{
+            color: #fff;
+        }
+        ul{
+            margin-top: 15px;
+            li{
+                &:not(:first-of-type){
+                    margin-top: 10px;
+                }
+                i{
+                    color: $mainColor;
+                }
+            }
+            .icons{
+                margin-top: 20px;
+                a{
+                    height: 40px;
+                    width: 40px;
+                    text-align: center;
+                    line-height: 40px;
+                    border: 1.5px solid $mainColor;
+                    color: $mainColor;
+                    transition: .4s;
+                    &:not(:first-of-type){
+                        margin-left: 7px;
+                    }
+                    &:hover{
+                        color: #fff;
+                        background-color: $mainColor;
+                    }
+                }
+            }
+        }
+    }
+    .sletter{
+        h3{
+            color: #fff;
+        }
+        p{
+            color: #777;
+            margin-top: 15px;
+        }
+        form{
+            position: relative;
+            margin-top: 15px;
+            input{
+                width: 100%;
+                padding: 10px;
+                outline: none;
+                border: none;
+            }
+            button{
+                position: absolute;
+                right: 0;
+                padding: 10px;
+                outline: none;
+                border: none;
+                background-color: $mainColor;
+                color: #fff;
+            }
+        }
+    }
+    .foot{
+        margin-top: 20px;
+        border-top: 1.5px solid #777;
+        padding-top: 20px;
+        a{
+            color: $mainColor;
+        }
+    }
+}
+/* end footer */ 
