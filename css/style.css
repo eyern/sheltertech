@@ -1008,15 +1008,15 @@ a {
 }
 
 .testimonial .owl-carousel .owl-dots button:first-of-type {
-  background-image: url("../imgs/team.png");
+  background-image: url("../imgs/rev.jpg");
 }
 
 .testimonial .owl-carousel .owl-dots button:nth-of-type(2) {
-  background-image: url("../imgs/team.png");
+  background-image: url("../imgs/rev.jpg");
 }
 
 .testimonial .owl-carousel .owl-dots button:last-of-type {
-  background-image: url("../imgs/team.png");
+  background-image: url("../imgs/rev.jpg");
 }
 
 .testimonial .owl-carousel .owl-dots button.active {
