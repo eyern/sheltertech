@@ -1161,7 +1161,7 @@ a {
 }
 
 .footer .links ul li a {
-  color: #777;
+  color: #fff;
   -webkit-transition: .3s;
   transition: .3s;
 }
@@ -1219,7 +1219,7 @@ a {
 }
 
 .footer .sletter p {
-  color: #777;
+  color: #fff;
   margin-top: 15px;
 }
 
@@ -1247,7 +1247,7 @@ a {
 
 .footer .foot {
   margin-top: 20px;
-  border-top: 1.5px solid #777;
+  border-top: 1.5px solid #fff;
   padding-top: 20px;
 }
 
