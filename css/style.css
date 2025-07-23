@@ -884,7 +884,8 @@ a {
 
 .team .members > div .person .text p {
   color: #B78D65;
-  font-weight: 600;
+  font-weight: 300;
+  text-align: justify;
 }
 
 /* end team */
